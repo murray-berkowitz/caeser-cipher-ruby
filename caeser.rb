@@ -1,6 +1,6 @@
 def caesar(string, number)
     result = ''
-    skip = ['!', '?', ' ', ',']
+    skip = ['!', '?', ' ', ',', '.']
     if number > 26
         number -= 26
     end
