@@ -10,9 +10,7 @@ def caesar(string, number)
             next
         end
         letter = string[i].ord + number
-        if(letter > 122)
-            letter -= 26
-        elsif(letter > 90 && letter < 97)
+        if(letter > 122 || (letter > 90 && letter < 97))
             letter -= 26
         end
         letter = letter.chr
@@ -20,4 +18,4 @@ def caesar(string, number)
     end
     return result
 end
-puts caesar('Eat some jello, bitch!', 7)
+puts caesar('Eat some jello, bitch!', 4)
